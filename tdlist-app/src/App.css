@@ -1,0 +1,109 @@
+.mainContainer {
+	width: 35%;
+	height: 500px;
+	position: relative;
+	border-radius: 7px;
+	margin: 0 auto;
+}
+
+.wrapItems {
+	position: absolute;
+	bottom: 55px;
+	top: 170px;
+	right: 0;
+	left: 0;
+	overflow: auto;
+}
+
+.topHeading {
+	color: rgb(48, 2, 2);
+	font-family: 'Times New Roman', Times, serif, sans-serif;
+	padding: 7px;
+	text-align: center;
+}
+
+ul.listItems {
+	padding: 0 30px;
+}
+
+input.itemCheckbox {
+	margin-right: 8px;
+	position: relative;
+	-webkit-appearance: none;
+	float: left;
+	border: 1.5px solid #ccc;
+	width: 18px;
+	height: 18px;
+	border-radius: 7px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	margin-left: 7px;
+	font-weight: bold;
+}
+
+li.item {
+	font-family: 'Times New Roman', Times, serif;
+	list-style-type: none;
+	font-size: 1.5em;
+	border-bottom: 2px solid rgba(80, 2, 90, 0.411);
+	padding: 5px 0;
+}
+
+li.item:hover .removeItemButton {
+	opacity: 2;
+	visibility: visible;
+}
+
+input.itemCheckbox:checked:after {
+	color: green;
+	width: 15px;
+	content: "\2713";
+	font-size: 15px;
+	display: block;
+	height: 15px;
+	left: 0.7px;
+	position: absolute;
+	bottom: 1.8px;
+}
+
+input.itemCheckbox:checked + label.itemDisplay {
+	color: #f807a8;
+	text-decoration: line-through;
+}
+
+input.itemCheckbox + label.itemDisplay {
+	color: black;
+}
+
+input[placeholder] {
+	font-size: 1.2em;
+}
+
+.taskContainer {
+	padding: 15px;
+}
+
+.removeItemButton {
+	float: right;
+	visibility: hidden;
+	color: red;
+	background: rgba(0,0,0,0);
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 0;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 10px 5px;
+	opacity: 0;
+	margin-right: 7px;
+	cursor: pointer;
+}
+
+.taskContainer .newTask {
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 25px;
+	
+}
