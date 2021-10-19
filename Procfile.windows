@@ -1,0 +1,2 @@
+web:yarn --cwd tdlist-app start
+api:bundle exec rails server -p 3000
